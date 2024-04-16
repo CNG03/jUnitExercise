@@ -17,7 +17,7 @@ public class OddNumberSumCalculator {
             return 1;
         }
 
-        if (n > Integer.MAX_VALUE) {
+        if (n >= Integer.MAX_VALUE) {
             throw new IllegalArgumentException("n quá lớn để tính toán");
         }
         long sum = 0;
@@ -32,6 +32,6 @@ public class OddNumberSumCalculator {
         return (int)sum;
     }
 //    public static void main(String[] args) {
-//        System.out.println(OddNumberSumCalculator.sumOfOddNumbers(1));
+//        System.out.println(OddNumberSumCalculator.sumOfOddNumbers(500000));
 //    }
 }
